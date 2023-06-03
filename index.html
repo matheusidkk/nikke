@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cabecaesq">
+        <a href="index.html"><img class="logo" src="https://nikke-db.pages.dev/images/nikke-db.png"></a>
+
+        <input class="searchbox" type="text" placeholder="Procurar">
+
+        <div class="filtrosgeral"> <!--FILTROS--------------------------------------------------------------------->
+            <div class="filtroslabel1">
+                <label class="filtrolabels1" id="asterisco" for="elemento1"><img src="https://www.travessiainclusao.com.br/static/front/assets/img/asterisco-ac.png"></label>
+                <label class="filtrolabels1" for="elemento2"><img src="https://www.prydwen.gg/static/28683cfad611afa1484e0d6f6105cb4f/264f2/element_electric.webp"></p></label>
+                <label class="filtrolabels1" for="elemento3"><img src="https://www.prydwen.gg/static/886c48f98531e14217904a68a82c338e/ca121/element_fire.png"></p></label>
+                <label class="filtrolabels1" for="elemento4"><img src="https://www.prydwen.gg/static/a8fc09bea5bccbbcb5ddb2bab41949bf/ca121/element_iron.png"></p></label>
+                <label class="filtrolabels1" for="elemento5"><img src="https://www.prydwen.gg/static/e15fbab10c970adce95216ac473135ed/ca121/element_water.png"></p></label>
+                <label class="filtrolabels1" for="elemento6"><img src="https://www.prydwen.gg/static/ab9f0a0fce80e6c42f2165f2eb2452f0/ca121/element_wind.png"></p></label>
+            </div>
+            <div class="filtroslabel2">
+                <label class="filtrolabels2" id="asterisco" for="rankin1"><img src="https://www.travessiainclusao.com.br/static/front/assets/img/asterisco-ac.png"></label>
+                <label class="filtrolabels2" for="rankin2"><p id="rankp2">R</p></label>
+                <label class="filtrolabels2" for="rankin3"><p id="rankp3">SR</p></label>
+                <label class="filtrolabels2" for="rankin4"><p id="rankp4">SSR</p></label>
+            </div>
+            <div class="filtroslabel3">
+                <label class="filtrolabels3" id="asterisco" for="tier1"><img src="https://www.travessiainclusao.com.br/static/front/assets/img/asterisco-ac.png"></label>
+                <label class="filtrolabels3" for="tier2"><img src="https://www.prydwen.gg/static/05bb9c57feb80b0a53fd6cafd883e174/ca121/type_1.png"></p></label>
+                <label class="filtrolabels3" for="tier3"><img src="https://www.prydwen.gg/static/b6aa14ccb3152a30b5f9c0934879a4f9/ca121/type_2.png"></p></label>
+                <label class="filtrolabels3" for="tier4"><img src="https://www.prydwen.gg/static/15defffc42161a8d77ba86f3224d5957/ca121/type_3.png"></p></label>
+            </div>
+            <div class="filtroslabel4">
+                <label class="filtrolabels4" id="asterisco" for="estilo1"><img src="https://www.travessiainclusao.com.br/static/front/assets/img/asterisco-ac.png"></label>
+                <label class="filtrolabels4" for="estilo2"><img src="https://www.prydwen.gg/static/fbfac279a391eb7f16a53370f974355d/264f2/class_attacker.webp"></p></label>
+                <label class="filtrolabels4" for="estilo3"><img src="https://www.prydwen.gg/static/6e0f4600d00a2f6121271c0f78c88786/264f2/class_defender.webp"></p></label>
+                <label class="filtrolabels4" for="estilo4"><img src="https://www.prydwen.gg/static/dfde6904bfa1643fb13da486924af86d/264f2/class_support.webp"></p></label>
+            </div>
+        </div>
+
+        <conteiner> <!--RADIOS--------------------------------------------------------------------------------->
+            <div class="filtroscb1">
+                <input type="radio" name="radio-elemento" class="elementocb" id="elemento1" data-elemento="todos">
+                <input type="radio" name="radio-elemento" class="elementocb" id="elemento2" data-elemento="eletrico">
+                <input type="radio" name="radio-elemento" class="elementocb" id="elemento3" data-elemento="fogo">
+                <input type="radio" name="radio-elemento" class="elementocb" id="elemento4" data-elemento="ferro">
+                <input type="radio" name="radio-elemento" class="elementocb" id="elemento5" data-elemento="agua">
+                <input type="radio" name="radio-elemento" class="elementocb" id="elemento6" data-elemento="vento">
+            </div>
+            <div class="filtroscb2">
+                <input type="radio" name="radio-rank" class="rankingcb" id="rankin1" data-rank="todos">
+                <input type="radio" name="radio-rank" class="rankingcb" id="rankin2" data-rank="r">
+                <input type="radio" name="radio-rank" class="rankingcb" id="rankin3" data-rank="sr">
+                <input type="radio" name="radio-rank" class="rankingcb" id="rankin4" data-rank="ssr">
+            </div>
+            <div class="filtroscb3">
+                <input type="radio" name="radio-tier" class="tiercb" id="tier1" data-tier="todos">
+                <input type="radio" name="radio-tier" class="tiercb" id="tier2" data-tier="1">
+                <input type="radio" name="radio-tier" class="tiercb" id="tier3" data-tier="2">
+                <input type="radio" name="radio-tier" class="tiercb" id="tier4" data-tier="3">
+            </div>
+            <div class="filtroscb4">
+                <input type="radio" name="radio-estilo" class="estilocb" id="estilo1" data-estilo="todos">
+                <input type="radio" name="radio-estilo" class="estilocb" id="estilo2" data-estilo="atacante">
+                <input type="radio" name="radio-estilo" class="estilocb" id="estilo3" data-estilo="defensor">
+                <input type="radio" name="radio-estilo" class="estilocb" id="estilo4" data-estilo="suporte">
+            </div>
+        </conteiner>
+
+        <div class="champions"> <!--CARTAS DAS BONECAS--------------------------------------------------------->
+            <div class="bonecas" data-elemento="vento" data-tier="2" data-estilo="suporte" data-nome="admi" data-rank="ssr" data-cor="amarelo">
+                <img src="https://www.prydwen.gg/static/066da55baf64a2c7c11a3958c6b5d193/60b4d/admi_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="fogo" data-tier="3" data-estilo="atacante" data-nome="alice" data-rank="ssr" data-cor="rosa">
+                <img src="https://www.prydwen.gg/static/94d01c6fd76e93454b34b6f0b134ba5d/60b4d/alice_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="ferro" data-tier="2" data-estilo="defensor" data-nome="anis" data-rank="sr" data-cor="amarelo">
+                <img src="https://www.prydwen.gg/static/f3bf26dc83d5a31a5a8b46355d9e20b3/60b4d/anis_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="agua" data-tier="2" data-estilo="atacante" data-nome="aria" data-rank="ssr" data-cor="branco">
+                <img src="https://www.prydwen.gg/static/861c597a1846bfea9d8bbd760dac0bbc/60b4d/aria_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="eletrico" data-tier="2" data-estilo="atacante" data-nome="belorta" data-rank="sr" data-cor="rosa">
+                <img src="https://www.prydwen.gg/static/2c3e11d8965e60db68a48979116be85d/60b4d/belorta_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="eletrico" data-tier="2" data-estilo="suporte" data-nome="biscuit" data-rank="ssr" data-cor="amarelo">
+                <img src="https://www.prydwen.gg/static/f542ff8fff2df4b171b3fb3ef75ffb85/60b4d/biscuit_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="vento" data-tier="2" data-estilo="defensor" data-nome="blanc" data-rank="ssr" data-cor="branco">
+                <img src="https://www.prydwen.gg/static/bcd85d9bb6f99885bccc933d03991c07/60b4d/blanc_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="agua" data-tier="3" data-estilo="atacante" data-nome="brid" data-rank="ssr" data-cor="azul">
+                <img src="https://www.prydwen.gg/static/86155c25c213c48bbccb40cfbe917d1a/60b4d/brid_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="ferro" data-tier="2" data-estilo="defensor" data-nome="centi" data-rank="ssr" data-cor="amarelo">
+                <img src="https://www.prydwen.gg/static/83ed726ead71c91a8110740374597b27/60b4d/centi_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="fogo" data-tier="1" data-estilo="suporte" data-nome="cocoa" data-rank="ssr" data-cor="rosa">
+                <img src="https://www.prydwen.gg/static/249325af661515f4234e6a046fe8a064/60b4d/cocoa_icon.webp">
+            </div>
+        
+            <div class="bonecas" data-elemento="fogo" data-tier="3" data-estilo="defensor" data-nome="crow" data-rank="ssr" data-cor="vermelho">
+                <img src="https://www.prydwen.gg/static/59d66f236542b4887034173b70177dd3/60b4d/crow_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="vento" data-tier="3" data-estilo="atacante" data-nome="d" data-rank="ssr" data-cor="vermelho">
+                <img src="https://www.prydwen.gg/static/d4eb1bee42eda75df678d2f23931aff0/60b4d/d_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="vento" data-tier="2" data-estilo="defensor" data-nome="delta" data-rank="sr" data-cor="verde">
+                <img src="https://www.prydwen.gg/static/5d4be549107e1f2bdc8645873236b1d2/60b4d/delta_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="vento" data-tier="2" data-estilo="defensor" data-nome="diesel" data-rank="ssr" data-cor="azul">
+                <img src="https://www.prydwen.gg/static/454270444acc923035517fbd3b71bbf4/60b4d/diesel_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="vento" data-tier="2" data-estilo="suporte" data-nome="dolla" data-rank="ssr" data-cor="roxo">
+                <img src="https://www.prydwen.gg/static/9cffd71ed16bbf20fc1b3b542a74e6c8/60b4d/dolla_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="agua" data-tier="1" data-estilo="suporte" data-nome="dorothy" data-rank="ssr" data-cor="rosa">
+                <img src="https://www.prydwen.gg/static/52c0bb1911ad8a4ff4e5b11110a6ab28/60b4d/dorothy_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="fogo" data-tier="3" data-estilo="atacante" data-nome="drake" data-rank="ssr" data-cor="vermelho">
+                <img src="https://www.prydwen.gg/static/dd41faf38ff5b9c0ad6603e720619a8f/60b4d/drake_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="fogo" data-tier="1" data-estilo="suporte" data-nome="emma" data-rank="ssr" data-cor="vermelho">
+                <img src="https://www.prydwen.gg/static/fde8f1e1ce61228967ad9ec8af771499/60b4d/emma_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="vento" data-tier="3" data-estilo="atacante" data-nome="epinel" data-rank="ssr" data-cor="azul">
+                <img src="https://www.prydwen.gg/static/b70ff5847ea161a4c7f01c5f20955c5c/60b4d/epinel_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="eletrico" data-tier="1" data-estilo="defensor" data-nome="ether" data-rank="sr" data-cor="roxo">
+                <img src="https://www.prydwen.gg/static/2400afbfa211a1db536c906f2e0e262a/60b4d/ether_icon.webp">
+            </div>
+        
+            <div class="bonecas" data-elemento="fogo" data-tier="2" data-estilo="atacante" data-nome="eunhwa" data-rank="ssr" data-cor="vermelho">
+                <img src="https://www.prydwen.gg/static/1659088541bb1b28389ccf64cbb54907/60b4d/eunhwa_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="eletrico" data-tier="1" data-estilo="suporte" data-nome="exia" data-rank="ssr" data-cor="azul">
+                <img src="https://www.prydwen.gg/static/7e833e38b9b438f98af5940b06edc468/60b4d/exia_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="agua" data-tier="2" data-estilo="defensor" data-nome="folkwang" data-rank="ssr" data-cor="roxo">
+                <img src="https://www.prydwen.gg/static/49362e8159fb82e78410efd2a995d977/60b4d/folkwang_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="ferro" data-tier="1" data-estilo="suporte" data-nome="frima" data-rank="ssr" data-cor="rosa">
+                <img src="https://www.prydwen.gg/static/729864516a6224f9fc9de1184ef877ae/60b4d/frima_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="eletrico" data-tier="3" data-estilo="atacante" data-nome="guillotine" data-rank="ssr" data-cor="amarelo">
+                <img src="https://www.prydwen.gg/static/849455f1237535750d6383f4831c1fdf/60b4d/guillotine_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="vento" data-tier="2" data-estilo="atacante" data-nome="guilty" data-rank="ssr" data-cor="verde">
+                <img src="https://www.prydwen.gg/static/6dba75e041243feee1c240deee75c559/60b4d/guilty_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="eletrico" data-tier="3" data-estilo="atacante" data-nome="harran" data-rank="ssr" data-cor="rosa">
+                <img src="https://www.prydwen.gg/static/b3721ed6c39084e9911745361fd6570e/60b4d/harran_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="agua" data-tier="3" data-estilo="atacante" data-nome="helm" data-rank="ssr" data-cor="azul">
+                <img src="https://www.prydwen.gg/static/c9979cff3fa84468d282634b1d60836c/60b4d/helm_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="vento" data-tier="2" data-estilo="suporte" data-nome="himeno" data-rank="sr" data-cor="roxo">
+                <img src="https://www.prydwen.gg/static/da9a0cbee2bb5f85d163d8d25747a7e6/60b4d/himeno_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="vento" data-tier="1" data-estilo="defensor" data-nome="idoll flower" data-rank="r" data-cor="amarelo">
+                <img src="https://www.prydwen.gg/static/70955e7d07f2ec2b28927f77fdcb88dc/60b4d/idollflower_icon.webp">
+            </div>
+        
+            <div class="bonecas" data-elemento="agua" data-tier="1" data-estilo="suporte" data-nome="idoll ocean" data-rank="r" data-cor="amarelo">
+                <img src="https://www.prydwen.gg/static/a39dfa345e904bc4a514db2cd8c05ffc/60b4d/idollocean_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="ferro" data-tier="3" data-estilo="suporte" data-nome="idoll sun" data-rank="r" data-cor="amarelo">
+                <img src="https://www.prydwen.gg/static/5d256b2db083da55c0c0ea2a469eff8e/60b4d/idollsun_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="eletrico" data-tier="3" data-estilo="atacante" data-nome="isabel" data-rank="ssr" data-cor="roxo">
+                <img src="https://www.prydwen.gg/static/c5ccac91278f7ff0fb62a1cfa094a25e/60b4d/isabel_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="ferro" data-tier="1" data-estilo="defensor" data-nome="jackal" data-rank="ssr" data-cor="rosa">
+                <img src="https://www.prydwen.gg/static/8b5dbe64fd3b5cc45324e5c118267aeb/60b4d/jackal_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="ferro" data-tier="3" data-estilo="atacante" data-nome="julia" data-rank="ssr" data-cor="branco">
+                <img src="https://www.prydwen.gg/static/b525e1a3a88a0c68ee0c24ad192d6fb6/60b4d/julia_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="ferro" data-tier="3" data-estilo="atacante" data-nome="laplace" data-rank="ssr" data-cor="azul">
+                <img src="https://www.prydwen.gg/static/bc5a8bc902adfb42b0c538a66159aa1b/60b4d/laplace_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="ferro" data-tier="1" data-estilo="suporte" data-nome="liter" data-rank="ssr" data-cor="amarelo">
+                <img src="https://www.prydwen.gg/static/4815b31782020c75ad99d332d54f6323/60b4d/liter_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="agua" data-tier="1" data-estilo="defensor" data-nome="ludmilla" data-rank="ssr" data-cor="branco">
+                <img src="https://www.prydwen.gg/static/c5b9e181547151fd7038cd83ba35f3fd/60b4d/ludmilla_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="eletrico" data-tier="3" data-estilo="atacante" data-nome="maiden" data-rank="ssr" data-cor="vermelho">
+                <img src="https://www.prydwen.gg/static/01b647fd49861b5305f7e0cb6fc63a09/60b4d/maiden_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="agua" data-tier="2" data-estilo="defensor" data-nome="makima" data-rank="ssr" data-cor="vermelho">
+                <img src="https://www.prydwen.gg/static/33e5da7490ecbf0f21f4762b9bd381ed/60b4d/makima_icon.webp">
+            </div>
+        
+            <div class="bonecas" data-elemento="agua" data-tier="1" data-estilo="suporte" data-nome="mary" data-rank="ssr" data-cor="azul">
+                <img src="https://www.prydwen.gg/static/f38af9ba124203b6cabd74aca4d7b641/60b4d/mary_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="ferro" data-tier="3" data-estilo="atacante" data-nome="maxwell" data-rank="ssr" data-cor="amarelo">
+                <img src="https://www.prydwen.gg/static/93d44190358ad0fcda38d6e6e107ec62/60b4d/maxwel_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="vento" data-tier="1" data-estilo="suporte" data-nome="mica" data-rank="sr" data-cor="vermelho">
+                <img src="https://www.prydwen.gg/static/7a879aa0592ed4069531141b3966cd42/60b4d/mica_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="agua" data-tier="3" data-estilo="atacante" data-nome="mihara" data-rank="sr" data-cor="roxo">
+                <img src="https://www.prydwen.gg/static/4a87cee6c31ef9a5d0508212831cc340/60b4d/mihara_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="agua" data-tier="1" data-estilo="atacante" data-nome="milk" data-rank="ssr" data-cor="branco">
+                <img src="https://www.prydwen.gg/static/45082510523372d5af24eb1da2e2396e/60b4d/milk_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="vento" data-tier="2" data-estilo="suporte" data-nome="miracle fairy anne" data-rank="ssr" data-cor="azul">
+                <img src="https://www.prydwen.gg/static/c6ceea437415ffe9dad57dd84b6865f3/60b4d/anne_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="fogo" data-tier="1" data-estilo="suporte" data-nome="miranda" data-rank="ssr" data-cor="vermelho">
+                <img src="https://www.prydwen.gg/static/1347f6bfd3ccce5f40bc5aa01aad7a7d/60b4d/miranda_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="fogo" data-tier="3" data-estilo="atacante" data-nome="modernia" data-rank="ssr" data-cor="amarelo">
+                <img src="https://www.prydwen.gg/static/802bf3134fd935eddaddc33ac5017d41/60b4d/modernia_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="agua" data-tier="1" data-estilo="suporte" data-nome="n102" data-rank="sr" data-cor="branco">
+                <img src="https://www.prydwen.gg/static/510126b1c7ed2707ef5c0e0bb239652f/60b4d/n102_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="fogo" data-tier="1" data-estilo="suporte" data-nome="neon" data-rank="sr" data-cor="azul">
+                <img src="https://www.prydwen.gg/static/a57df3a4f920f22dee72d6a4faea333b/60b4d/neon_icon.webp">
+            </div>
+        
+            <div class="bonecas" data-elemento="agua" data-tier="3" data-estilo="atacante" data-nome="neve" data-rank="sr" data-cor="branco">
+                <img src="https://www.prydwen.gg/static/acd5bf7574a448024d18d8befd09f102/60b4d/neve_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="fogo" data-tier="2" data-estilo="atacante" data-nome="nihilister" data-rank="ssr" data-cor="vermelho">
+                <img src="https://www.prydwen.gg/static/6d60ad78690523f7d6b1169b7496259a/60b4d/nihilister_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="vento" data-tier="2" data-estilo="defensor" data-nome="noah" data-rank="ssr" data-cor="rosa">
+                <img src="https://www.prydwen.gg/static/e85af87106d388bae80e0fa4c9588990/60b4d/noah_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="vento" data-tier="3" data-estilo="atacante" data-nome="noir" data-rank="ssr" data-cor="marrom">
+                <img src="https://www.prydwen.gg/static/a6a5886e8a8d3759e7f7935e9dcf1b8d/60b4d/noir_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="eletrico" data-tier="1" data-estilo="suporte" data-nome="noise" data-rank="ssr" data-cor="azul">
+                <img src="https://www.prydwen.gg/static/66ecab0a489a2ef6d3df2dccdcdb311c/60b4d/noise_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="ferro" data-tier="2" data-estilo="defensor" data-nome="novel" data-rank="ssr" data-cor="amarelo">
+                <img src="https://www.prydwen.gg/static/2d768441d86a208971ae9a370a25c284/60b4d/novel_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="vento" data-tier="1" data-estilo="suporte" data-nome="pepper" data-rank="ssr" data-cor="rosa">
+                <img src="https://www.prydwen.gg/static/cbd0e67b95a58abe8037c9bfd17f0131/60b4d/pepper_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="agua" data-tier="2" data-estilo="defensor" data-nome="poli" data-rank="ssr" data-cor="azul">
+                <img src="https://www.prydwen.gg/static/09bf8bdd4ca52d5bbefc4072fb018cdb/60b4d/poli_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="fogo" data-tier="3" data-estilo="atacante" data-nome="power" data-rank="ssr" data-cor="amarelo">
+                <img src="https://www.prydwen.gg/static/8cc51a7523d9ce2648ca901dafcc38f9/60b4d/power_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="agua" data-tier="3" data-estilo="atacante" data-nome="privaty" data-rank="ssr" data-cor="azul">
+                <img src="https://www.prydwen.gg/static/ccf228c26b60cd74e6f8bce05c3ddcf8/60b4d/privaty_icon.webp">
+            </div>
+        
+            <div class="bonecas" data-elemento="eletrico" data-tier="1" data-estilo="suporte" data-nome="product 08" data-rank="r" data-cor="azul">
+                <img src="https://www.prydwen.gg/static/e61659e7cd7a8be1b07fa00f15d8ed89/60b4d/product8_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="fogo" data-tier="3" data-estilo="atacante" data-nome="product 12" data-rank="r" data-cor="verde">
+                <img src="https://www.prydwen.gg/static/5d42c1727b76a56f510b49d7d3ec2b51/60b4d/product12_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="vento" data-tier="2" data-estilo="suporte" data-nome="product 23" data-rank="r" data-cor="verde">
+                <img src="https://www.prydwen.gg/static/c653c3df3d78d755a275354ddec54863/60b4d/product23_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="eletrico" data-tier="2" data-estilo="suporte" data-nome="quency" data-rank="ssr" data-cor="rosa">
+                <img src="https://www.prydwen.gg/static/fcda742bb9971ce894deb5aba6d4ec8b/60b4d/quency_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="fogo" data-tier="3" data-estilo="atacante" data-nome="rapi" data-rank="sr" data-cor="vermelho">
+                <img src="https://www.prydwen.gg/static/d2182bea4a3c35b721a4bd55d5690239/60b4d/rapi_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="ferro" data-tier="1" data-estilo="suporte" data-nome="rapunzel" data-rank="ssr" data-cor="amarelo">
+                <img src="https://www.prydwen.gg/static/b085d6638a870a21dfe81fa83915e074/60b4d/rapunzel_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="agua" data-tier="1" data-estilo="defensor" data-nome="rei" data-rank="ssr" data-cor="roxo">
+                <img src="https://www.prydwen.gg/static/228b9936de297c9c1b26c27bb80b59a7/60b4d/rei_icon-min.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="eletrico" data-tier="1" data-estilo="atacante" data-nome="rosanna" data-rank="ssr" data-cor="branco">
+                <img src="https://www.prydwen.gg/static/91184bdcd40eb0df1edb90d32b0aea90/60b4d/rosanna_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="ferro" data-tier="2" data-estilo="atacante" data-nome="rupee" data-rank="ssr" data-cor="amarelo">
+                <img src="https://www.prydwen.gg/static/0e9381f58b59d3c94d460a1791c043c6/60b4d/rupee_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="fogo" data-tier="1" data-estilo="suporte" data-nome="sakura" data-rank="ssr" data-cor="vermelho">
+                <img src="https://www.prydwen.gg/static/7e9d48eb9f3fcf850c0e760b055439f1/60b4d/sakura_icon.webp">
+            </div>
+        
+            <div class="bonecas" data-elemento="eletrico" data-tier="3" data-estilo="atacante" data-nome="scarlet" data-rank="ssr" data-cor="branco">
+                <img src="https://www.prydwen.gg/static/e6108076ecd772e101f22d77a2ee3eb6/60b4d/scarlet_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="fogo" data-tier="2" data-estilo="atacante" data-nome="signal" data-rank="ssr" data-cor="branco">
+                <img src="https://www.prydwen.gg/static/f04d9c2af6296c9e996739ebf22ca9fd/60b4d/signal_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="eletrico" data-tier="2" data-estilo="defensor" data-nome="sin" data-rank="ssr" data-cor="roxo">
+                <img src="https://www.prydwen.gg/static/7ed8d6828b087116701de42d983f57e3/60b4d/sin_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="ferro" data-tier="3" data-estilo="atacante" data-nome="snow white" data-rank="ssr" data-cor="branco">
+                <img src="https://www.prydwen.gg/static/cca848f0ed074359a9fe832a3f5855fc/60b4d/snow_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="fogo" data-tier="1" data-estilo="suporte" data-nome="soda" data-rank="ssr" data-cor="verde">
+                <img src="https://www.prydwen.gg/static/268a9578c7b7c5e9e705bcbd0a54b559/60b4d/soda_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="eletrico" data-tier="3" data-estilo="atacante" data-nome="soldier eg" data-rank="r" data-cor="branco">
+                <img src="https://www.prydwen.gg/static/5ab73c9dedfb2d26289c37d026f76ec5/60b4d/soldiereg_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="ferro" data-tier="2" data-estilo="defensor" data-nome="soldier fa" data-rank="r" data-cor="verde">
+                <img src="https://www.prydwen.gg/static/bbdbbe6026210ec9425b7b583251246a/60b4d/soldierfa_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="fogo" data-tier="1" data-estilo="suporte" data-nome="soldier ow" data-rank="r" data-cor="azul">
+                <img src="https://www.prydwen.gg/static/c9f347f399b4bcd94a82f184abc7bed3/60b4d/soldierow_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="ferro" data-tier="3" data-estilo="atacante" data-nome="soline" data-rank="ssr" data-cor="azul">
+                <img src="https://www.prydwen.gg/static/f40e2fb9f7c3d325409635681e0f27d4/60b4d/soline_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="ferro" data-tier="3" data-estilo="atacante" data-nome="sugar" data-rank="ssr" data-cor="branco">
+                <img src="https://www.prydwen.gg/static/c17575707266e86e2b0d0ad859cf0935/60b4d/sugar_icon.webp">
+            </div>
+        
+            <div class="bonecas" data-elemento="agua" data-tier="3" data-estilo="atacante" data-nome="vesti" data-rank="ssr" data-cor="vermelho">
+                <img src="https://www.prydwen.gg/static/6e15fc164660b4ca7ec1974e57382ecb/60b4d/vesti_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="agua" data-tier="2" data-estilo="atacante" data-nome="viper" data-rank="ssr" data-cor="rosa">
+                <img src="https://www.prydwen.gg/static/466fda5e86ed8e653d5016055b018b08/60b4d/viper_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="vento" data-tier="1" data-estilo="atacante" data-nome="volume" data-rank="ssr" data-cor="vermelho">
+                <img src="https://www.prydwen.gg/static/81322f18cac0b4e219372821f30f9a53/60b4d/volume_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="eletrico" data-tier="1" data-estilo="defensor" data-nome="winter shopper rupee" data-rank="ssr" data-cor="verde">
+                <img src="https://www.prydwen.gg/static/4957dbc3fee0219e431d602ec7100311/60b4d/xrupee_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="fogo" data-tier="1" data-estilo="suporte" data-nome="yan" data-rank="ssr" data-cor="vermelho">
+                <img src="https://www.prydwen.gg/static/ccd68d306d780f31e1d123084682e78c/60b4d/yan_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="fogo" data-tier="3" data-estilo="atacante" data-nome="yulha" data-rank="ssr" data-cor="branco">
+                <img src="https://www.prydwen.gg/static/93bc2b0c26e88b113d089c29029cf55a/60b4d/yulha_icon.webp">
+            </div>
+
+            <div class="bonecas" data-elemento="fogo" data-tier="2" data-estilo="defensor" data-nome="yuni" data-rank="ssr" data-cor="rosa">
+                <img src="https://www.prydwen.gg/static/b41b08676389e7e30afde35da7193eb8/60b4d/yuni_icon.webp">
+            </div>
+        </div>
+    </div>
+
+    <div class="cabeca">
+        <div class="capitulos">
+            <label for="radiocap1" class="caps">Cap.1</label>
+            <label for="radiocap2" class="caps">Cap.2</label>
+            <label for="radiocap3" class="caps">Cap.3</label>
+            <label for="radiocap4" class="caps">Cap.4</label>
+            <label for="radiocap5" class="caps">Cap.5</label>
+        </div>
+        <div class="blocobaixo">
+            <div class="titulor"></div>
+            <div class="frase"></div>
+        </div>
+
+        <img class="imagem" src="https://cdn-www.bluestacks.com/bs-images/f928a5dbf80447342086c275e00751fd.png">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
